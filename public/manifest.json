@@ -1,9 +1,9 @@
 {
-    "name": "Enter your extension name here",
-    "description": "Enter your extension description here",
+    "name": "WhenIMove",
+    "description": "When I move: Help remember sites where you store you address",
     "version": "1.0.0",
     "manifest_version": 3,
-    "author": "<author_name>",
+    "author": "Logibyte LLC",
     "icons": {
         "16": "icons/16.png",
         "48": "icons/48.png",
@@ -12,7 +12,12 @@
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": [],
+    "permissions": [
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://0ahl740628.execute-api.us-east-2.amazonaws.com/*"
+    ],
     "action": {
         "default_popup": "popup.html"
     },
